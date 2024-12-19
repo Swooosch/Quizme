@@ -40,7 +40,7 @@ const questions = [
 ]
 
 /**
- * Load the qeustions based on the array
+ * Load the questions based on the array
  * @param {int} questionNumber 
  */
 function loadQuestion(questionNr) {
@@ -66,6 +66,7 @@ function loadAnswers(questionNr) {
  */
 
 function start() {
+    startOver.style.visibility = "hidden";
     loadQuestion(questionNr);
     loadAnswers(questionNr);
 }
