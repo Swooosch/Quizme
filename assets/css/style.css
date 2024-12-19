@@ -10,3 +10,12 @@
 body {
     background-color: aqua;
 }
+
+/* Score div */
+
+#scoreDiv {
+    width: 25% vw;
+}
+
+/* Buttons */
+
