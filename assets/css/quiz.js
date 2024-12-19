@@ -1,12 +1,13 @@
 // Get elements from HTML file and stored in a new var
 
-const questions = document.getElementById('questions');
+const question = document.getElementById('question');
 const firstAnswer = document.getElementById('firstAnswer');
 const secondAnswer = document.getElementById('secondAnswer');
 const thirdAnswer = document.getElementById('thirdAnswer');
 const forthAnswer = document.getElementById('forthAnswer');
 
 const score = document.getElementById('score');
+let questionNr = 0;
 
 // Question array
 const questions = [
@@ -15,20 +16,20 @@ const questions = [
         "answers": [
             "Manny", "Sid", "Leonard", "Scrat"
         ],
-        "correct": 1
+        "correct": 0
     },
     {
         "question": "What's the name of Elsa's sister in Frozen?",
         "answers": [
             "Ellie", "Anna", "Hannah", "Penny"
         ],
-        "correct": 2
-    },{
-        "question": "           ",
-        "answers": [
-            "Manny", "Sid", "Leonard", "Scrat"
-        ],
         "correct": 1
+    },{
+        "question": "What color is Blixten McQueen?",
+        "answers": [
+            "Yellow", "Black", "Pink", "Red"
+        ],
+        "correct": 3
     },{
         "question": "",
         "answers": [
