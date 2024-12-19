@@ -31,10 +31,42 @@ const questions = [
         ],
         "correct": 3
     },{
-        "question": "",
+        "question": "Who delivers gifts on christmas?",
         "answers": [
-            "Manny", "Sid", "Leonard", "Scrat"
+            "The Grinch", "Santa", "Batman", "Barbie"
         ],
         "correct": 1
     },
 ]
+
+/**
+ * Load the qeustions based on the array
+ * @param {int} questionNumber 
+ */
+function loadQuestion(questionNr) {
+    question.innerText = questions[questionNr].question;
+}
+
+/**
+ * This function loads answers into the choice buttons
+ * @param {int} questionNumber 
+ */
+function loadAnswers(questionNr) {
+    firstAnswer.innerText = questions[questionNr].answers[0];
+    secondAnswer.innerText = questions[questionNr].answers[1];
+    thirdAnswer.innerText = questions[questionNr].answers[2];
+    forthAnswer.innerText = questions[questionNr].answers[3];
+  }
+  
+
+
+
+/**
+ * Function to start the quiz and load questions and answers
+ */
+
+function start() {
+    loadQuestion(questionNr);
+    loadAnswers(questionNr);
+}
+start();
