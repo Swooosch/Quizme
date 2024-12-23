@@ -44,12 +44,8 @@ h3,
 }
 /* Score div */
 
-#score-div {
-    font-family: 'Galindo', sans-serif;
-}
-
-.score-span {
-    background-color: blue;
+.score-number * {
+    border-radius: 0;
 }
 /* Center the content */
 
