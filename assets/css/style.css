@@ -34,3 +34,9 @@ h3,
 .main-cont {
     margin-top: 215px;
 }
+
+@media screen and (max-width: 490px) {
+    .btn {
+        margin-bottom: 5px;
+    }
+}
