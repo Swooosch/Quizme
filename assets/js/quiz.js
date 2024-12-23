@@ -10,7 +10,6 @@ const startOver = document.getElementById('startOver');
 const score = document.getElementById('score');
 let questionNr = 0;
 let scoreTotal = 0;
-
 // Question array
 const questions = [
     {
