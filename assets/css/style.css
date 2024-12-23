@@ -2,7 +2,6 @@
         
 
 #navname {
-    background-color: aqua;
     text-align: center;
 }
 
@@ -11,12 +10,13 @@
 /* Body */
 
 body {
-    background-color: aqua;
+    background-image: url("../images/background.png");
     
 }
 
 h1,
 h2,
+h3,
 .btn {
     font-family: 'Galindo', sans-serif;
 }
@@ -26,3 +26,9 @@ h2,
     font-family: 'Galindo', sans-serif;
 }
 
+/* Center the content */
+
+#wrapper,
+.main-cont {
+    margin-top: 215px;
+}
