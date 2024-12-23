@@ -43,8 +43,6 @@ Mobile devices:<br>
 * Navigation bar at top for SEO purpose
 ![screenshot of the navigationbar for bigger screens](assets/images/navbarquiz.png)
 
-
-* The homepage is information about where we are located in Sweden
 * Footer provides copyright information<br>
 
 ![screenshot of footer with copyight](assets/images/footerquiz.png)
@@ -58,7 +56,7 @@ Mobile devices:<br>
 
 | Feature  | Excpect  | Action  | Result  |
 |:---|:---:|:---:|---:|
-|  Buttons | Add score if correct  | Clicked all buttons manually  |  Add score if correct | 
+|  Buttons | Add score if correct  | Clicked all buttons manually  |  Added score if correct | 
 |  End of game | Display new buttons to choose from  | Clicked the link manually  | New buttons appear and works as intended  |
 
 
