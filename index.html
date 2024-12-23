@@ -20,26 +20,24 @@
             <h1>Quizzie!</h1>
         </div>
     </nav>
-    <!-- Header -->
-    <header>
-        <div id="question" class="display-2 text-center">Question</div>
-    </header>
+    
     <!-- Main -->
     <main>
-       <div id="wrapper"></div> 
-        <div id="question" class="text-center">
-            <button id="firstAnswer" type="button" class="btn btn-primary btn-lg">Testing</button>
-            <button id="secondAnswer" type="button" class="btn btn-primary btn-lg">Testing</button>
-            <button id="thirdAnswer" type="button" class="btn btn-primary btn-lg">Testing</button>
-            <button id="forthAnswer" type="button" class="btn btn-primary btn-lg">Testing</button>
+       <div id="wrapper">
+        <div class="text-center">
+            <h2 id="question" class="display-5"></h2>
+            <button id="firstAnswer" type="button" class="btn btn-primary btn-lg" onclick="checkedAnswer(0)">Testing</button>
+            <button id="secondAnswer" type="button" class="btn btn-primary btn-lg" onclick="checkedAnswer(1)">Testing</button>
+            <button id="thirdAnswer" type="button" class="btn btn-primary btn-lg" onclick="checkedAnswer(2)">Testing</button>
+            <button id="forthAnswer" type="button" class="btn btn-primary btn-lg" onclick="checkedAnswer(3)">Testing</button>
         </div>
-        <div class="text-center">Score: <span id="score">0</span></div>
+        <div class="text-center display-6">Score: <span id="score">0</span></div>
 
         <!-- Start over -->
          <div id="startOver" class="text-center">
             <h3>Do you want to play again?</h3>
-            <button type="button" class="btn btn-primary btn-lg">Yes!</button>
-            <button type="button" class="btn btn-primary btn-lg">No thanks!</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="endgameOption(0)">Yes!</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="endgameOption(1)">No thanks!</button>
          </div>
        </div>  
     </main>
