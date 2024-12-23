@@ -1,131 +1,107 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Quizzie!
 
-Welcome USER_NAME,
+![mockup for finished result](assets/images/mockup-quiz.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of contents
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+1. Goals
+2. Target Audience
+3. User goals
+4. Features
+5. Manual testing
+6. Validation and lighthouse reports
 
-## Gitpod Reminders
+## Project goals
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The primary goal for Quizzie is a fun quiz for kids to enyoy and challange their friends and family!
 
-`python3 -m http.server`
+### Target audience
 
-A blue button should appear to click: _Make Public_,
+Main audience is children and families.
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+### User goals:
 
-A blue button should appear to click: _Make Public_,
+* Enyoy a fun time
+* Challenge friends and family
 
-Another blue button should appear to click: _Open Browser_.
+### Wireframes
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* Wireframes created in [Balsamiq](https://balsamiq.com/wireframes/desktop/#) for different screensizes<br>
+Tablets and larger screens:<br>
+![Laptop wireframe](assets/images/laptopwireframe.png)<br>
+<br>
+Mobile devices:<br>
 
-To log into the Heroku toolbelt CLI:
+![Mobile wireframe screenshot](assets/images/mobilewireframe.png)<br>
+![tablet wireframe screenshot](assets/images/tabletwireframe.png)<br>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* The wireframe is a starting idea and the final design was improved along with the project for better visuals.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+### Features
 
-### Connecting your Mongo database
+* Navigation bar at top for SEO purpose
+![screenshot of the navigationbar for bigger screens](assets/images/navbarquiz.png)
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
 
-------
+* The homepage is information about where we are located in Sweden
+* Footer provides copyright information<br>
 
-## Release History
+![screenshot of footer with copyight](assets/images/footerquiz.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**June 18, 2024,** Add Mongo back into template
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+### Manual testing
 
-**May 28 2024:** Fix Mongo and Links installs
+* I have manually tested all the links and buttons on the website
 
-**April 26 2024:** Update node version to 16
 
-**September 20 2023:** Update Python version to 3.9.17.
+| Feature  | Excpect  | Action  | Result  |
+|:---|:---:|:---:|---:|
+|  Buttons | Add score if correct  | Clicked all buttons manually  |  Add score if correct | 
+|  End of game | Display new buttons to choose from  | Clicked the link manually  | New buttons appear and works as intended  |
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Deployment
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* All code was written in github editor, to deploy the website the following steps was used:<br>
+    1. In the Github repository, go to Settings
+    2. From the menu to the left, click "Pages"
+    3. Under "Default branch", make sure it says "Main" and save.
+    4. Go back to the repository and update, under deployment to the right, it should say "github-pages" with a green checkmar.
+    5. If it doesn't show, try to update the site again as it takes a while sometimes.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Final testing 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* Lighthouse testing:<br>
+![screenshot of lighthouse report](assets/images/lighthousequiz.png)
+* Validator testing:
+    - HTLM Validation: Passed without any error. It says the links are empty due to the face there is only a picture of the relevant social media platform.
+    <br>
+    
+    ![screenshot of html validation](assets/images/FYLLIHÄR.png)
+    
+    - CSS Validation: Passed without any errors.<br>
+    
+    ![screenshot of css validation](assets/images/cssvalidator.png)
+    
+    - Screensize responsiveness is tested in the browser down to 280px
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Bugs
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* No bugs where discovered.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Credits 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* A big thank you to my mentor Spencer and Kay for supporting me while building this
+* Background image is generated from Microsoft Co-pilot.
+* Bootstrap documentation and the [Bootstrap library](https://getbootstrap.com/docs/5.3/getting-started/introduction/), version 5.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Future features
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+* Add more questions
+* An option to change difficulty of the quiz to make it for adults as well.
+* More options for the user to change background
+* Add a highscore-system
