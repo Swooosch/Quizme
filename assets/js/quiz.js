@@ -1,12 +1,11 @@
 // Get elements from HTML file
-
 const question = document.getElementById('question');
 const firstAnswer = document.getElementById('firstAnswer');
 const secondAnswer = document.getElementById('secondAnswer');
 const thirdAnswer = document.getElementById('thirdAnswer');
 const forthAnswer = document.getElementById('forthAnswer');
 const startOver = document.getElementById('startOver');
-
+const wrapAround = document.getElementById('wrapAround');
 const score = document.getElementById('score');
 let questionNr = 0;
 let scoreTotal = 0;
@@ -26,7 +25,7 @@ const questions = [
         ],
         "correct": 1
     },{
-        "question": "What color is Blixten McQueen?",
+        "question": "What color is Lightning McQueen?",
         "answers": [
             "Yellow", "Black", "Pink", "Red"
         ],
@@ -38,8 +37,7 @@ const questions = [
         ],
         "correct": 1
     },
-]
-
+];
 /**
  * Load the questions based on the array
  * @param {int} questionNumber 
@@ -47,7 +45,6 @@ const questions = [
 function loadQuestion(questionNr) {
     question.innerText = questions[questionNr].question;
 }
-
 /**
  * This function loads answers into the choice buttons
  * @param {int} questionNumber 
@@ -63,7 +60,6 @@ function loadAnswers(questionNr) {
  * Check if the choosen answer is correct
  * @param {int} answerNr
  */
-
 function checkedAnswer(answerNr) {
     console.log('answer number chosen: ', answerNr);
     let controlAnswer = questions[questionNr].correct;
@@ -71,11 +67,8 @@ function checkedAnswer(answerNr) {
         scoreTotal++;
         score.innerText = scoreTotal;
     }
-
     questionNr++;
-
     // End the game when out of questions
-
     const quizLength = questions.length;
     if (questionNr === quizLength) {
         endgame();
@@ -83,25 +76,21 @@ function checkedAnswer(answerNr) {
         loadQuestion(questionNr);
         loadAnswers(questionNr);
     }
-
 }
 function endgame() {
     startOver.style.visibility = "visible";
 }
-
 // Function to end the game
-
 function endgameOption(chosen) {
     if (chosen === 0) {
-      window.location.reload()
+      window.location.reload();
     } else {
-      wrapper.innerHTML = "<h1>Thank you for playing!</h1>"
+      wrapAround.innerHTML = "<h1>Thank you for playing!</h1>";
     }
   }
 /**
  * Function to start the quiz and load questions and answers
  */
-
 function start() {
     startOver.style.visibility = "hidden";
     loadQuestion(questionNr);
