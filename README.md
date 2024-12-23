@@ -78,13 +78,15 @@ Mobile devices:<br>
     - HTLM Validation: Passed without any error. It says the links are empty due to the face there is only a picture of the relevant social media platform.
     <br>
     
-    ![screenshot of html validation](assets/images/FYLLIHÄR.png)
+    ![screenshot of html validation](assets/images/htmlvalidaton.png)
     
     - CSS Validation: Passed without any errors.<br>
     
     ![screenshot of css validation](assets/images/cssvalidator.png)
     
     - Screensize responsiveness is tested in the browser down to 280px
+
+    - JavaScript code is tested on JShint with no errors found.
 
 
 ### Bugs
