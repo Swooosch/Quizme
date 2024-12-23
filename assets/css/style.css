@@ -13,8 +13,22 @@ body {
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    color: rgba(7, 5, 6, 0.842);
     
 }
+
+h1,
+h2,
+h3,
+.score-div {
+    background: rgba(243, 237, 240, 0.60);
+}
+
+#score-div {
+    width: 40%;
+    justify-self: center;
+}
+
 
 h1,
 h2,
@@ -23,12 +37,20 @@ h3,
     font-family: 'Galindo', sans-serif;
     text-align: center;
 }
+
+/* Button opacity for hovering */
+.btn:hover {
+    opacity: 0.9;
+}
 /* Score div */
 
 #score-div {
     font-family: 'Galindo', sans-serif;
 }
 
+.score-span {
+    background-color: blue;
+}
 /* Center the content */
 
 #wrapper,
