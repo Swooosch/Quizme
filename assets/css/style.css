@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Galindo&display=swap');
+        
+
 #navname {
     background-color: aqua;
     text-align: center;
@@ -9,15 +12,17 @@
 
 body {
     background-color: aqua;
+    
 }
 
+h1,
+h2,
+.btn {
+    font-family: 'Galindo', sans-serif;
+}
 /* Score div */
 
-#scoreDiv {
-    width: 25% vw;
-}
-
-h1 {
-    text-align: center;
+#score-div {
+    font-family: 'Galindo', sans-serif;
 }
 
