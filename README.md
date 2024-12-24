@@ -75,7 +75,7 @@ Mobile devices:<br>
 * Lighthouse testing:<br>
 ![screenshot of lighthouse report](assets/images/lighthousequiz.png)
 * Validator testing:
-    - HTLM Validation: Passed without any error. It says the links are empty due to the face there is only a picture of the relevant social media platform.
+    - HTLM Validation: Passed without any error. It says h2 element is empty but it is intended as the questions will load there.
     <br>
     
     ![screenshot of html validation](assets/images/htmlvalidation.png)
