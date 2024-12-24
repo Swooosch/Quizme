@@ -78,7 +78,7 @@ Mobile devices:<br>
     - HTLM Validation: Passed without any error. It says the links are empty due to the face there is only a picture of the relevant social media platform.
     <br>
     
-    ![screenshot of html validation](assets/images/htmlvalidaton.png)
+    ![screenshot of html validation](assets/images/htmlvalidation.png)
     
     - CSS Validation: Passed without any errors.<br>
     
